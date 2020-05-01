@@ -1,0 +1,65 @@
+// TODO -= Properly add and configure Prettier instead of this junk
+{
+  /** Easier syntax **/
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  /** Workflow **/
+  "explorer.sortOrder": "type", // filesFirst, type, modified
+  "workbench.editor.highlightModifiedTabs": true,
+  /** Auto formatting **/
+  "editor.formatOnSave": true,
+  /*** HTML ***/
+  "html.format.indentInnerHtml": false,
+  "html.format.wrapLineLength": 120,
+  "html.autoClosingTags": true,
+  "html.format.wrapAttributes": "force", // "aligned-multiple, auto, force, force-aligned, force-expand-multiline, preserve
+  "html.format.endWithNewline": true,
+  "html.validate.styles": true,
+  "html.format.indentHandlebars": true,
+  /*** CSS  ***/
+  "css.lint.argumentsInColorFunction": "warning",
+  "css.lint.boxModel": "warning",
+  "css.lint.compatibleVendorPrefixes": "warning",
+  "css.lint.duplicateProperties": "warning",
+  "css.lint.emptyRules": "warning",
+  "css.lint.float": "error",
+  "css.lint.fontFaceProperties": "error",
+  "css.lint.hexColorLength": "error",
+  "css.lint.ieHack": "warning",
+  "css.lint.important": "warning",
+  "css.lint.importStatement": "warning",
+  "css.lint.universalSelector": "warning",
+  "css.lint.unknownVendorSpecificProperties": "warning",
+  "css.lint.zeroUnits": "warning",
+  /*** On Save per language **/
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[jsx]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  // "[json]": {
+  //   "editor.codeActionsOnSave": {
+  //     "source.fixAll.eslint": true
+  //   }
+  // },
+  "[html]": {
+    // "editor.autoClosingBrackets": "always",
+    "editor.foldingStrategy": "indentation",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[css]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    }
+  },
+  /** IDE Style **/
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth"
+}

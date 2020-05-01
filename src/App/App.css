@@ -1,0 +1,25 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  color: fuchsia;
+  text-shadow: 2px 0px 2px skyblue;
+  background-color: black;
+  text-align: center;
+  height: 100vh;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+#image {
+  background-image: url("./bg-synth.gif");
+  height: 90vh;
+  width: 100vh;
+  max-width: 100%;
+  background-position: center;
+  background-size: cover;
+}
